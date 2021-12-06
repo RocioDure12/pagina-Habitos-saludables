@@ -14,7 +14,7 @@ const inputPeso=document.querySelector("#input_peso")
 const inputAltura=document.querySelector("#input_altura")
 const modalBackground=document.querySelector(".modal-background")
 const modal=document.querySelector(".modal")
-const btnCerrarModal=document.querySelector(".cerrar_modal")
+
 
 const guardarEnLocalStorage = (clave, objeto) => {
 

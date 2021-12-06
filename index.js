@@ -16,6 +16,19 @@ const modalBackground=document.querySelector(".modal-background")
 const modal=document.querySelector(".modal")
 const btnCerrarModal=document.querySelector(".cerrar_modal")
 
+const guardarEnLocalStorage = (clave, objeto) => {
+
+    const objetoConvertidoAJSON = JSON.stringify(objeto)
+    return localStorage.setItem(clave, objetoConvertidoAJSON)
+}
+
+
+//funcion para obtener info de Local Storage y convertirla a objeto JS
+const obtenerDesdeLS = (clave) => {
+    const infoGuardada = localStorage.getItem(clave)
+    return JSON.parse(infoGuardada)
+
+}
 
 
 const mostrarVistas = (elemento) => {
@@ -63,12 +76,14 @@ const nuevoUsuario={
 }
 console.log(nuevoUsuario)
 ocultarVistas()
-modal.classList.add("is-active")
+
 
 }
 
 
-
+const funcionCalculoIMC=(peso,altura)=>{
+return peso / altura * 2
+}
 //calculo imc
 //peso en kg / altura*2
 //por ejemplo peso 70.8 altura 1,65

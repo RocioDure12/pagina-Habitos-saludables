@@ -12,8 +12,6 @@ const inputNombre=document.querySelector("#input_nombre")
 const selectSexo=document.querySelector("#select_sexo")
 const inputPeso=document.querySelector("#input_peso")
 const inputAltura=document.querySelector("#input_altura")
-const modalBackground=document.querySelector(".modal-background")
-const modal=document.querySelector(".modal")
 
 
 const guardarEnLocalStorage = (clave, objeto) => {
